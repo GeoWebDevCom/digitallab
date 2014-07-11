@@ -879,7 +879,8 @@ h1 {
 	background:none;
 }
 
-.page-content .block-media {
+.page-content .block-media,
+.page-content p img {
   margin:28px 0 36px 0;
 }
 
@@ -1126,6 +1127,11 @@ h1 {
 .we-do-item h3 a {
   text-decoration:none;
 	background:url(images/ul-1.png) 0 26px repeat-x;
+}
+
+.we-do-item h3 a:hover {
+  color:#6897aa;
+	background:none;
 }
 
 .we-do-item h3 a:hover {
@@ -1400,7 +1406,12 @@ h1 {
 .paginator .pages a {
   background:none;
 	color:#3a3a42;
-	margin:0 10px;
+	margin:0 5px;
+	padding:0 5px;
+}
+
+.paginator .pages a:hover {
+  text-decoration:underline !important;
 }
 
 .paginator .pages .act {
@@ -1409,6 +1420,7 @@ h1 {
 
 .paginator .inact {
   color:#c7c7cb;
+	background-image:url(images/ul-3.png);
 }
 
 .paginator .back {
@@ -1417,6 +1429,11 @@ h1 {
 
 .paginator .forward {
   margin:0 0 0 12px;
+}
+
+.paginator .back:hover,
+.paginator .forward:hover {
+  background:none;
 }
 
 .paginator .pages {
@@ -1724,7 +1741,7 @@ h1 {
   border:none !important;
   outline:none !important;
   float:none !important;
-  padding:10px 0 !important;
+  padding:0 20px !important;
   width:100%;
 	margin:20px 0 0 0 !important;
 }
