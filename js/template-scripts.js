@@ -79,7 +79,7 @@ $(document).ready(function() {
     });
   }
 
-	var footerHeight = $(".footer").outerHeight();
+	var footerHeight = $(".footer").height();
 
 	$(".top-main").css({"padding-bottom": footerHeight})
 	$(".footer").css({
