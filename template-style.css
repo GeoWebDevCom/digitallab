@@ -26,7 +26,7 @@ a {
 }
 
 a:hover {
-  
+  color:#399BC0;
 }
 
 .clearfix,
@@ -140,6 +140,7 @@ dl:after,
 
 .main-menu a:hover {
   background:none;
+	color:#399BC0;
 }
 
 .header-lang-sel {
@@ -409,7 +410,14 @@ dl:after,
 /* Prtfolio filter */
 
 .portfolio-filter {
-  margin:0 -15px 16px -15px;
+  margin:0 -14px -4px -15px;
+	text-align:justify;
+}
+
+.portfolio-filter:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
 
 .portfolio-filter a {
@@ -604,7 +612,10 @@ dl:after,
 .footer {
   background:#3a3a42 url(images/footer-bg.png) center 0 repeat-y;
 	color:#fff;
-	padding:0 0 46px 0;
+}
+
+.footer-content {
+  padding:0 0 46px 0;
 }
 
 .footer a {
@@ -658,11 +669,11 @@ dl:after,
 }
 
 .footer-menu a {
-  text-decoration:none;
+  text-decoration:underline;
 }
 
 .footer-menu a:hover {
-  text-decoration:underline;
+  text-decoration:none;
 }
 
 .footer-col-1 {
@@ -1170,6 +1181,10 @@ h1 {
 	margin:0 32px 0 0;
 }
 
+.portfolio-list-2 .descr {
+  border:none;
+}
+
 .portfolio {
   padding:5px 0 0 0;
 }
@@ -1227,6 +1242,23 @@ h1 {
 	border: 1px solid #b5d4e0;
 	padding: 0 21px;
 	margin: 11px 0 0 0;
+}
+
+.button-back:hover {
+  background:#b5d4e0;
+	color:#3a3a42;
+}
+
+.button-back:active {
+  background:#b5d4e0;
+	color:#3a3a42;
+	-webkit-box-shadow:inset 0 0 5px 0 rgba(0,0,0,.75);
+	-moz-box-shadow:inset 0 0 5px 0 rgba(0,0,0,.75);
+	box-shadow:inset 0 0 5px 0 rgba(0,0,0,.75);
+	border:none;
+	padding:0 22px;
+	line-height:40px;
+	height:40px;
 }
 
 .button-back span {
@@ -1316,6 +1348,12 @@ h1 {
   text-decoration:none;
 	background:url(images/ul-1.png) 0 17px repeat-x;
 }
+
+.archive-nav a:hover {
+	color:#399BC0;
+	background:none;
+}
+
 
 .archive-nav .year {
   font-family:'Roboto Condensed';
@@ -1412,6 +1450,7 @@ h1 {
 
 .paginator .pages a:hover {
   text-decoration:underline !important;
+	color:#399BC0;
 }
 
 .paginator .pages .act {
@@ -1615,7 +1654,7 @@ h1 {
 }
 
 .common-form .error-wrapper {
-  background: url(../images/error-bg-r.png) left center no-repeat;
+  background: url(images/error-bg-r.png) left center no-repeat;
   height: 40x;
   line-height: 40px;
   padding: 0 0 0 0;
@@ -1630,7 +1669,7 @@ h1 {
 }
 
 .common-form .errors-left .error-wrapper {
-  background: url(../images/error-bg.png) right center no-repeat;
+  background: url(images/error-bg.png) right center no-repeat;
   padding: 0;
   right: 100%;
   left: auto;
