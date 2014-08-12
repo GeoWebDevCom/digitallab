@@ -6,6 +6,10 @@
 
 
 /* Start:template_styles.css*/
+
+
+
+/* Start:template_styles.css*/
 /* Стили шаблона, НЕ РЕДАКТИРОВАТЬ */
 
 body, html {
@@ -137,7 +141,7 @@ dl:after,
 .main-menu a {
     color:#3a3a42;
     text-decoration:none;
-    background:url(images/ul-1.png) 0 18px repeat-x;
+    background:url('images/ul-1.png') 0 18px repeat-x;
 }
 
 .main-menu li.act a {
@@ -179,7 +183,7 @@ dl:after,
     float:left;
     width:22px;
     height:22px;
-    background-image:url(images/soclinks.png);
+    background-image:url('images/soclinks.png');
     background-repeat:no-repeat;
     margin:0 14px;
 }
@@ -349,9 +353,10 @@ dl:after,
     height: 44px;
     overflow: hidden;
     display: block;
-    padding: 16px 20px 13px 0;
+    padding: 16px 30px 13px 0;
     margin:0 0 -5px 0;
     letter-spacing: .05em;
+		float:left;
 }
 
 .main-carousel .slide-client {
@@ -361,16 +366,17 @@ dl:after,
     line-height: 22px;
     color: #a1a1a1;
     letter-spacing: .21em;
-    display: inline-block;
-    padding: 0 31px 0px 0;
+    float:left;
+    padding: 0 30px 0px 0;
     text-transform: uppercase;
     height: 32px;
+		clear:left;
 }
 
 .main-slider .arr-prev {
     width:92px;
     height:400px;
-    background:url(images/main-slider-arrows.png) 0 center no-repeat;
+    background:url('images/main-slider-arrows.png') 0 center no-repeat;
     position:absolute;
     left:0;
     top:0;
@@ -382,7 +388,7 @@ dl:after,
 .main-slider .arr-next {
     width:92px;
     height:400px;
-    background:url(images/main-slider-arrows.png) -80px center no-repeat;
+    background:url('images/main-slider-arrows.png') -80px center no-repeat;
     position:absolute;
     right:0;
     top:0;
@@ -448,7 +454,7 @@ dl:after,
 }
 
 .portfolio-filter a span {
-    background:url(images/ul-1-dotted.png) 0 bottom repeat-x;
+    background:url('images/ul-1-dotted.png') 0 bottom repeat-x;
 }
 
 .portfolio-filter a:hover span,
@@ -526,24 +532,27 @@ dl:after,
     display:block;
     background:#292929;
     font-size:0;
+		height:138px;
+		overflow:hidden;
 }
 
 .portfolio-item img {
-    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    display:block;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    transition: all 0.2s ease;
-    position:relative;
+	border:none;
+	filter: url('filters.svg#grayscale'); /* Firefox 3.5+ */
+	filter: gray; /* IE6-9 */
+	-webkit-filter: grayscale(1); /* Webkit Nightlies & Google Chrome Canary */
+	display:block;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	position:relative;
 }
 
 .portfolio-item:hover img {
-    filter:none;
-    -webkit-filter:none;
+	filter: none; /* Applies to FF + IE */
+	-webkit-filter: grayscale(0);
 }
 
 .portfolio-item .descr {
@@ -619,7 +628,7 @@ dl:after,
 }
 
 .footer {
-    background:#3a3a42 url(images/footer-bg.png) center 0 repeat-y;
+    background:#3a3a42 url('images/footer-bg.png') center 0 repeat-y;
     color:#fff;
 }
 
@@ -762,7 +771,7 @@ dl:after,
     display:block;
     width:24px;
     height:24px;
-    background-image:url(images/soclinks-footer.png);
+    background-image:url('images/soclinks-footer.png');
     background-repeat:no-repeat;
     position:absolute;
     left:17px;
@@ -887,7 +896,7 @@ h1 {
 
 .section-menu a {
     text-decoration:none;
-    background:url(images/ul-1.png) 0 17px repeat-x;
+    background:url('images/ul-1.png') 0 17px repeat-x;
 }
 
 .section-menu a:hover {
@@ -960,7 +969,7 @@ h1 {
     left:12px;
     top:50%;
     margin-top:-40px;
-    background:url(images/main-slider-arrows.png) 0 0 no-repeat;
+    background:url('images/main-slider-arrows.png') 0 0 no-repeat;
     cursor:pointer;
     opacity:.8;
 }
@@ -978,7 +987,7 @@ h1 {
     right:12px;
     top:50%;
     margin-top:-40px;
-    background:url(images/main-slider-arrows.png) -80px 0 no-repeat;
+    background:url('images/main-slider-arrows.png') -80px 0 no-repeat;
     cursor:pointer;
     opacity:.8;
 }
@@ -1059,7 +1068,7 @@ h1 {
 }
 
 .history-year {
-    background: url(images/history-dots.png) 27px 0 repeat-y;
+    background: url('images/history-dots.png') 27px 0 repeat-y;
     padding: 0 0 10px 90px;
     position: relative;
 }
@@ -1146,7 +1155,7 @@ h1 {
 
 .we-do-item h3 a {
     text-decoration:none;
-    background:url(images/ul-1.png) 0 26px repeat-x;
+    background:url('images/ul-1.png') 0 26px repeat-x;
 }
 
 .we-do-item h3 a:hover {
@@ -1174,7 +1183,7 @@ h1 {
     list-style: none;
     padding: 0 0 0 20px;
     margin: 0 0 8px 0;
-    background: url(images/bullet-square.png) 1px 7px no-repeat;
+    background: url('images/bullet-square.png') 1px 7px no-repeat;
 }
 
 .portfolio-list-2 {
@@ -1232,7 +1241,7 @@ h1 {
 .tags a {
     text-decoration:none;
     color:#393939;
-    background:url(images/ul-1.png) 0 bottom repeat-x;
+    background:url('images/ul-1.png') 0 bottom repeat-x;
 }
 
 .work-descr {
@@ -1276,7 +1285,7 @@ h1 {
 }
 
 .button-back span {
-    background:url(images/ul-2.png) 0 bottom repeat-x;
+    background:url('images/ul-2.png') 0 bottom repeat-x;
 }
 
 .button-back:hover span {
@@ -1360,7 +1369,7 @@ h1 {
 
 .archive-nav a {
     text-decoration:none;
-    background:url(images/ul-1.png) 0 17px repeat-x;
+    background:url('images/ul-1.png') 0 17px repeat-x;
 }
 
 .archive-nav a:hover {
@@ -1451,7 +1460,7 @@ h1 {
 .paginator a {
     color:#6897aa;
     text-decoration:none;
-    background:url(images/ul-2.png) 0 17px repeat-x;
+    background:url('images/ul-2.png') 0 17px repeat-x;
     display:inline-block;
 }
 
@@ -1473,7 +1482,7 @@ h1 {
 
 .paginator .inact {
     color:#c7c7cb;
-    background-image:url(images/ul-3.png);
+    background-image:url('images/ul-3.png');
 }
 
 .paginator .back {
@@ -1568,7 +1577,7 @@ h1 {
 
 .contacts-phones {
     font-family: 'Roboto Condensed';
-    background: url(images/ico-phone.png) 2px 2px no-repeat;
+    background: url('images/ico-phone.png') 2px 2px no-repeat;
     padding: 0 0 0 40px;
     font-size: 20px;
     margin: 0 0 18px 0;
@@ -1579,14 +1588,14 @@ h1 {
 }
 
 .contacts-address {
-    background: url(images/ico-address.png) 2px 2px no-repeat;
+    background: url('images/ico-address.png') 2px 2px no-repeat;
     padding: 0 0 0 40px;
     font-size: 13px;
     margin: 0 0 11px 0;
 }
 
 .contacts-email {
-    background: url(images/ico-email.png) 2px 3px no-repeat;
+    background: url('images/ico-email.png') 2px 3px no-repeat;
     padding: 0 0 0 40px;
     font-size: 13px;
 }
@@ -1594,7 +1603,7 @@ h1 {
 .contacts-email a {
     color:#6897aa;
     text-decoration:none;
-    background:url(images/ul-2.png) 0 15px repeat-x;
+    background:url('images/ul-2.png') 0 15px repeat-x;
 }
 
 .contacts-email a:hover {
@@ -1668,7 +1677,7 @@ h1 {
 }
 
 .common-form .error-wrapper {
-    background: url(images/error-bg-r.png) left center no-repeat;
+    background: url('images/error-bg-r.png') left center no-repeat;
     height: 40x;
     line-height: 40px;
     padding: 0 0 0 0;
@@ -1683,7 +1692,7 @@ h1 {
 }
 
 .common-form .errors-left .error-wrapper {
-    background: url(images/error-bg.png) right center no-repeat;
+    background: url('images/error-bg.png') right center no-repeat;
     padding: 0;
     right: 100%;
     left: auto;
@@ -1772,12 +1781,12 @@ h1 {
     line-height: 30px;
     color: #a6ddf2;
     padding: 0 0 0 34px;
-    background: url(images/ico-attach.png) 1px 5px no-repeat;
+    background: url('images/ico-attach.png') 1px 5px no-repeat;
     cursor: pointer;
 }
 
 .NFI-button span {
-    background:url(images/ul-2-dotted.png) 0 18px repeat-x;
+    background:url('images/ul-2-dotted.png') 0 18px repeat-x;
 }
 
 .NFI-button:hover span {
@@ -1858,7 +1867,7 @@ h1 {
 }
 
 .button-1 span {
-    background:url(images/ul-2.png) 0 bottom repeat-x;
+    background:url('images/ul-2.png') 0 bottom repeat-x;
 }
 
 .page-404 {
@@ -1887,7 +1896,7 @@ h1 {
 
 .site-map a {
     text-decoration:none;
-    background:url(images/ul-1.png) 0 14px repeat-x;
+    background:url('images/ul-1.png') 0 14px repeat-x;
 }
 
 .site-map a:hover {
@@ -1933,42 +1942,45 @@ h1 {
     list-style: none;
     padding: 0 0 0 20px;
     margin: 0 0 6px 0;
-    background: url(images/bullet-square.png) 1px 7px no-repeat;
+    background: url('images/bullet-square.png') 1px 7px no-repeat;
 }
 
 /* Form success popup */
 
 .success-fancybox .fancybox-skin {
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
-	background:#3a3a42;
-	text-align:center;
-	-webkit-border-radius:0;
-	-moz-border-radius:0;
-	border-radius:0;
-	-webkit-box-shadow:none;
-	-moz-box-shadow:none;
-	box-shadow:none;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    background:#3a3a42;
+    text-align:center;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
 }
 
 .success-fancybox .fancybox-close {
-  width:24px;
-	height:24px;
-	right: 14px;
-	top: 15px;
-	background:url(images/close-popup.png) 0 0 no-repeat;
+    width:24px;
+    height:24px;
+    right: 14px;
+    top: 15px;
+    background:url('images/close-popup.png') 0 0 no-repeat;
 }
 
 .success-message {
-  background: url(images/envelope.png) center 35px no-repeat;
-	padding: 81px 77px 14px 77px;
-	font-family: 'Roboto Condensed',sans-serif;
-	color: #fff;
-	font-size: 16px;
-	line-height: 22px;
-	text-transform: uppercase;
-	letter-spacing:.025em;
+    background: url('images/envelope.png') center 35px no-repeat;
+    padding: 81px 77px 14px 77px;
+    font-family: 'Roboto Condensed',sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing:.025em;
 }
+
+/* End */
+/* template_styles.css */
 
 /* End */
 /* template_styles.css */
